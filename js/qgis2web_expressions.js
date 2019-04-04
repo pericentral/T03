@@ -754,3 +754,108 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
+
+
+
+function HirarchieViaire_12rule0_eval_expression(context) {
+    // "Hiérarchie" = 1 AND Niveau = 'Normal'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.properties['Hiérarchie']  == 1) && (feature.properties['Niveau']  == 'Normal'));
+    } else {
+        return ((feature['Hiérarchie']  == 1) && (feature['Niveau']  == 'Normal'));
+    }
+}
+
+
+function HirarchieViaire_12rule1_eval_expression(context) {
+    // "Hiérarchie" = 1 AND Niveau = 'Pont'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.properties['Hiérarchie']  == 1) && (feature.properties['Niveau']  == 'Pont'));
+    } else {
+        return ((feature['Hiérarchie']  == 1) && (feature['Niveau']  == 'Pont'));
+    }
+}
+
+
+function HirarchieViaire_12rule2_eval_expression(context) {
+    // "Hiérarchie" = 1 AND Niveau = 'Tunnel'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.properties['Hiérarchie']  == 1) && (feature.properties['Niveau']  == 'Tunnel'));
+    } else {
+        return ((feature['Hiérarchie']  == 1) && (feature['Niveau']  == 'Tunnel'));
+    }
+}
+
+
+function HirarchieViaire_12rule3_eval_expression(context) {
+    // "Hiérarchie" = 2
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (feature.properties['Hiérarchie']  == 2);
+    } else {
+        return (feature['Hiérarchie']  == 2);
+    }
+}
+
+
+function HirarchieViaire_12rule4_eval_expression(context) {
+    // "Hiérarchie" = 3
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (feature.properties['Hiérarchie']  == 3);
+    } else {
+        return (feature['Hiérarchie']  == 3);
+    }
+}
+
+
+function HirarchieViaire_12rule5_eval_expression(context) {
+    // "Hiérarchie" = 4
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (feature.properties['Hiérarchie']  == 4);
+    } else {
+        return (feature['Hiérarchie']  == 4);
+    }
+}
+
+
+function HirarchieViaire_12rule0_eval_expression(context) {
+    // "Hiérarchie" = 1 AND Niveau = 'Normal'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.properties['Hiérarchie']  == 1) && (feature.properties['Niveau']  == 'Normal'));
+    } else {
+        return ((feature['Hiérarchie']  == 1) && (feature['Niveau']  == 'Normal'));
+    }
+}
+
+
+function HirarchieViaire_12rule3_eval_expression(context) {
+    // "Hiérarchie" = 2
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return (feature.properties['Hiérarchie']  == 2);
+    } else {
+        return (feature['Hiérarchie']  == 2);
+    }
+}
